@@ -1,0 +1,7 @@
+/home/ubuntu/source/stonky/nohup.out {
+    daily
+    rotate 7
+    compress
+    missingok
+    notifempty
+}
