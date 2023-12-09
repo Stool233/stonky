@@ -1,0 +1,15 @@
+[Unit]
+Description=Stonky Backend Service
+After=network.target
+
+[Service]
+ExecStart=/home/ubuntu/source/stonky/start_daemon.sh
+WorkingDirectory=/home/ubuntu/source/stonky
+User=ubuntu
+Group=ubuntu
+Restart=always
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
